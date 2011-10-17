@@ -1,0 +1,312 @@
+# Based on SuSE's Gilouch and Ubuntu's Human themes
+# Created by Patrick T.
+#
+# Feel free to modify and share!
+
+style "theme-default"
+{
+  GtkButton      ::default_border    = { 0, 0, 0, 0 }
+  GtkRange       ::trough_border     = 0
+  GtkPaned       ::handle_size       = 8
+  GtkRange       ::slider_width      = 15
+  GtkRange       ::stepper_size      = 15
+  GtkScrollbar   ::min_slider_length = 30
+  GtkCheckButton ::indicator_size    = 14
+  GtkMenuBar     ::internal-padding  = 0
+  GtkTreeView    ::expander_size     = 12
+  GtkExpander    ::expander_size     = 14
+
+  xthickness = 2
+  ythickness = 2
+
+  fg[NORMAL]        = "#101010" # very dark gray #101010
+  fg[PRELIGHT]      = "#101010" # dark grey
+  fg[ACTIVE]        = "#000000" # black
+  fg[SELECTED]      = "#ffffff" # white
+  fg[INSENSITIVE]   = "#beb399" # dark beige / grey (disabled text)
+
+  bg[NORMAL]        = "#fbf8f1" # light beige / grey
+  bg[PRELIGHT]      = "#fffefc" # very light beige
+  bg[ACTIVE]        = "#f6efe0" # mid beige / grey
+  bg[SELECTED]      = "#FF6D0C" # original: #6798cb; blueish
+  bg[INSENSITIVE]   = "#f1efde" # light beige / grey
+	
+  base[NORMAL]      = "#ffffff" # white
+  base[PRELIGHT]    = "#FF6D0C" # original: #729fcf; blueish
+  base[SELECTED]    = "#FFD799" # original: #6798cb; blueish
+  base[INSENSITIVE] = "#fbf8f1" #light beige / grey
+  base[ACTIVE]      = "#FFD799" # original: #96b9d5; blueish 
+  base[PRELIGHT]    = "#FFD799" # original: #729fcf; Selected item background
+	
+	engine "murrine"
+	{
+	glazestyle		= 0
+	roundness = 3
+	menubarstyle = 2
+	menuitemstyle = 1
+	listviewheaderstyle = 1
+	listviewstyle		= 0
+	scrollbarstyle = 2
+	animation		= TRUE
+	scrollbar_color = "#FF6D0C"
+	hilight_ratio = 1.0
+	contrast = 0.8
+        gradients               = TRUE
+	     menubaritemstyle = 1
+        menustyle = 0
+   }
+}
+
+style "theme-wide" = "theme-default"
+{
+  xthickness = 3
+  ythickness = 3
+}
+
+style "theme-wider" = "theme-default"
+{
+  xthickness = 3
+  ythickness = 3
+  base[SELECTED]    = "#FF6D0C" # original: #6798cb; blueish
+}
+
+style "theme-text" = "theme-default"
+{
+    base[SELECTED]   	= "#fc9747"  # Outline?
+}
+
+style "theme-toolbar" = "theme-default" 
+{
+    bg[NORMAL] = "#fdfbf7"
+}
+
+style "theme-tasklist" = "theme-default"
+{
+  xthickness = 5
+  ythickness = 3
+}
+
+style "theme-menu" = "theme-default"
+{
+  xthickness = 3
+  ythickness = 3
+  bg[NORMAL] = "#fdfbf7"
+}
+
+style "theme-menu-item" = "theme-default"
+{
+  xthickness = 2
+  ythickness = 4
+  fg[PRELIGHT] = "#ffffff"
+  text[PRELIGHT] = "#ffffff"
+  #bg[NORMAL] = "#FFD799"    # Horizontal lines
+  base[PRELIGHT] = "#FF6D0C" # original: #5a81b4; Selection color
+
+
+  bg[PRELIGHT]      = "#FF6D0C" #fffefc" # very light beige
+ 
+}
+
+style "theme-menu-itembar" = "theme-default"
+{
+  xthickness = 0
+  ythickness = 0
+}
+
+style "theme-tree" = "theme-default"
+{
+  xthickness = 2
+  ythickness = 2
+  GtkTreeView::odd_row_color = "#FFD799"
+  GtkTreeView::even_row_color = "#ffffff"
+}
+
+style "theme-frame-title" = "theme-default"
+{
+  fg[NORMAL] = "#2a2a2a"
+}
+
+style "theme-panel" = "theme-default"
+{
+  xthickness = 3
+  ythickness = 3
+}
+
+style "theme-tooltips" = "theme-default"
+{
+  xthickness = 4
+  ythickness = 4
+  bg[NORMAL] = { 1.0,1.0,0.75 }
+}
+
+style "theme-progressbar" = "theme-default"
+{
+  xthickness = 1
+  ythickness = 1
+  fg[PRELIGHT]  = "#ffffff"
+  base[SELECTED]    = "#FF6D0C" # original: #6798cb; blueish
+}
+
+style "theme-combo" = "theme-default"
+{
+  xthickness = 2
+  ythickness = 4
+}
+
+style "theme-button" = "theme-wide"
+{
+  #bg[NORMAL] = "#fbf8f1"
+  bg[PRELIGHT] = "#E6DBC3"
+  #bg[NORMAL] = "#fdfbf7"
+}
+style "theme-check" = "theme-button"
+{
+}
+
+style "theme-panel" = "theme-default"
+{
+    xthickness = 3
+    ythickness = 3
+}
+
+### Extra Customization ###
+
+style "theme-notebook" = "theme-wide"
+{
+  base[SELECTED]   	= "#FF6D0C"  # original: #9cbcdf; Tab selection color
+  bg[ACTIVE]        = "#f0e7d3"  # Unselected tabs
+}
+
+style "metacity-frame"
+{
+  # Normal base color
+  #bg[NORMAL]  = "#dcf1cb"
+
+  # Unfocused title background color
+  #bg[INSENSITIVE]  = "#fbf8f1"
+
+  # Unfocused title text color
+  #fg[INSENSITIVE]  = "#453f15"
+
+  # Focused icon color
+  #fg[NORMAL]  = { 0.2, 0.2, 0.2 }
+
+  # Focused title background color
+  bg[SELECTED]  = "#FF6D0C"  # original: #5c82b5
+
+  # Focused title text color
+  #fg[SELECTED]  = "#ffffff"
+}
+
+style "theme-slab" = "theme-default"
+{
+    bg[SELECTED] = "#FF6D0C"    # original: #84b0da; Outline
+    bg[NORMAL] = "#fdfbf7"      # Base bg color
+    bg[ACTIVE] = "#FFD799"      # original: #e9eef5; Right side bg color
+    fg[NORMAL] = "#FFD799"      # Left side caption text color
+    fg[INSENSITIVE] = "#FF6D0C" # Right side caption text color
+}
+
+style "theme-slab-group" = "theme-default" 
+{
+    #bg[SELECTED] = "#adc09b"  # Slab group text
+}
+
+style "theme-shell" = "theme-default"
+{
+    bg[ACTIVE] = "#FFD799"      # Left side bg color
+    fg[NORMAL] = "#FF6D0C"      # Left side text color
+    fg[INSENSITIVE] = "#FF6D0C" # Left side line
+    
+    base[NORMAL] = "#fdfbf7"        # Base bg color
+    text[INSENSITIVE] = "#FF6D0C"   # Base text color
+}
+
+style "evolution-hack" = "clearlooks-default"
+{
+        bg[ACTIVE]   = "#fdfbf7"
+        bg[SELECTED] = "#FFD799"
+        fg[ACTIVE]   = "#000000"
+        fg[SELECTED] = "#ffffff"
+}
+
+style "theme-shell-highlight" = "theme-default"
+{
+}
+
+#nautilus search stripe and other specialties
+style "extra-view" {
+	bg[NORMAL] = "#FF6D0C"
+	font = "Sans 6"
+} 
+
+style "theme-scrollbar" = "theme-default"
+{
+	engine "clearlooks"
+		{
+			style = GLOSSY
+			colorize_scrollbar = TRUE
+		}
+}
+
+# widget styles
+class "GtkWidget" style "theme-default"
+class "GtkButton" style "theme-button"
+class "GtkCombo"  style "theme-button"
+class "GtkRange"  style "theme-wider"
+class "GtkFrame"  style "theme-wide"
+class "GtkMenu"   style "theme-menu"
+class "GtkEntry"  style "theme-button"
+class "GtkMenuItem"    style "theme-menu-item"
+class "GtkStatusbar"   style "theme-wide"
+class "GtkNotebook"    style "theme-notebook"
+class "GtkProgressBar" style "theme-progressbar"
+class "GtkCheckButton" style "theme-check"
+class "GtkRadioButton" style "theme-check"
+class "GtkScrollbar" style "theme-scrollbar"
+
+widget_class "*MenuItem.*" style "theme-menu-item"
+
+# combobox stuff
+widget_class "*.GtkComboBox.GtkButton" style "theme-combo"
+widget_class "*.GtkCombo.GtkButton"    style "theme-combo"
+
+# tooltips stuff
+widget_class "*.tooltips.*.GtkToggleButton" style "theme-tasklist"
+widget "gtk-tooltips" style "theme-tooltips"
+
+# treeview stuff
+widget_class "*.GtkTreeView.GtkButton" style "theme-tree"
+widget_class "*.GtkCTree.GtkButton" style "theme-tree"
+widget_class "*.GtkList.GtkButton" style "theme-tree"
+widget_class "*.GtkCList.GtkButton" style "theme-tree"
+widget_class "*.GtkFrame.GtkLabel" style "theme-frame-title"
+
+# notebook stuff
+widget_class "*.GtkNotebook.*.GtkEventBox" style "theme-notebook"
+widget_class "*.GtkNotebook.*.GtkViewport" style "theme-notebook"
+
+# Metacity window manager
+class "MetaFrames" style "metacity-frame"
+
+# GNOME Panel
+widget_class "BasePWidget.GtkEventBox.GtkTable.GtkFrame" style "theme-panel"
+
+#nautilus search stripe
+widget "*.nautilus-extra-view-widget" style:highest "extra-view"
+
+# Toolbar
+#class "GtkToolbar" style "theme-toolbar"
+
+# GNOME-main-menu slab
+class "SlabWindow" style "theme-slab"
+
+# App Browser & Control Center
+class "ShellWindow" style "theme-shell"
+widget_class "ShellWindow.*.GtkEventBox" style "theme-shell-highlight"
+
+# Evolution
+widget_class "*GtkCTree*" style "evolution-hack"
+widget_class "*GtkList*" style "evolution-hack"
+widget_class "*GtkCList*" style "evolution-hack"
+widget_class "*.ETree.*" style "evolution-hack"
