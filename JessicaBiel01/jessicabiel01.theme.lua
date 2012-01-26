@@ -20,6 +20,10 @@ theme.border_width  = "0"
 theme.border_normal = "#262729"
 theme.border_focus  = "#6b544c"
 theme.border_marked = "#6b544c"
+
+theme.titlebar_bg_focus = "#f6f6f6"
+theme.titlebar_bg_normal = "#262729"
+
 -- There are another variables sets
 -- overriding the default one when
 -- defined, the sets are:
