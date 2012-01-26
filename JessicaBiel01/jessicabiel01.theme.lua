@@ -4,6 +4,7 @@
 
 theme = {}
 
+home                = os.getenv("HOME")
 theme.font          = "Dejavu Sans Mono 8"
 
 theme.bg_normal     = "#262729"
@@ -79,6 +80,16 @@ theme.titlebar_maximized_button_focus_active = "/usr/share/awesome/themes/defaul
 theme.wallpaper_cmd = { "feh --bg-scale /mnt/documents/Maidens/img/Wallpapers/JessicaBiel-wallpaper01.jpg"}
 
 -- You can use your own layout icons like this:
+--theme.layout_fairh      = "<span color='" .. theme.fg_normal .. "'>[fairh]</span>"
+--theme.layout_fairv      = "<span color='" .. theme.fg_normal .. "'>[fairv]</span>"
+--theme.layout_floating   = "<span color='" .. theme.fg_normal .. "'>[float]</span>"
+--theme.layout_magnifier  = "<span color='" .. theme.fg_normal .. "'>[magnifier]</span>"
+--theme.layout_max        = "<span color='" .. theme.fg_normal .. "'>[max]</span>"
+--theme.layout_fullscreen = "<span color='" .. theme.fg_normal .. "'>[full]</span>"
+--theme.layout_tilebottom = "<span color='" .. theme.fg_normal .. "'>[tileb]</span>"
+--theme.layout_tileleft   = "<span color='" .. theme.fg_normal .. "'>[tilel]</span>"
+--theme.layout_tile       = "<span color='" .. theme.fg_normal .. "'>[tile]</span>"
+--theme.layout_tiletop    = "<span color='" .. theme.fg_normal .. "'>[tilet]</span>"
 theme.layout_fairh = "/usr/share/awesome/themes/default/layouts/fairhw.png"
 theme.layout_fairv = "/usr/share/awesome/themes/default/layouts/fairvw.png"
 theme.layout_floating = "/usr/share/awesome/themes/default/layouts/floatingw.png"
@@ -91,6 +102,30 @@ theme.layout_tile = "/usr/share/awesome/themes/default/layouts/tilew.png"
 theme.layout_tiletop = "/usr/share/awesome/themes/default/layouts/tiletopw.png"
 
 theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
+
+-- Custom icons
+theme.awesomewm_image = home .. "/.icons/archlinux-wm-awesome.png"
+theme.terminal_image = home .. "/.icons/terminal_prompt.png"
+theme.firefox_image = "/usr/share/icons/hicolor/32x32/apps/firefox.png"
+theme.dwb_image = "/usr/share/pixmaps/dwb.png"
+theme.filemanager_image = home .. "/.icons/ranger-chuck.gif"
+theme.music_image = home .. "/.icons/music.jpg"
+theme.office_image = "/usr/share/icons/hicolor/32x32/apps/libreoffice-main.png"
+theme.skype_image = "/usr/share/pixmaps/skype.png"
+theme.vbox_image = "/usr/share/pixmaps/VBox.png"
+theme.avidemux_image = "/usr/share/pixmaps/avidemux.png"
+theme.gimp_image = "/usr/share/gimp/2.0/images/gimp-logo.png"
+theme.archlinux_image = home .. "/.icons/arch-logo-white.png"
+theme.amdcpu_image = home .. "/.icons/amd_cpu.png"
+theme.mobo_image = home .. "/.icons/motherboard.png"
+theme.nvidia_image = home .. "/.icons/nvidia-black.png"
+theme.ram_image = home .. "/.icons/ram_drive.png"
+theme.up_arrow_image = home .. "/.icons/up_arrow.png"
+theme.down_arrow_image = home .. "/.icons/down_arrow.png"
+theme.mail_image = home .. "/.icons/gmail-b&w.png"
+theme.taskwarrior_image = home .. "/.icons/taskwarrior.png"
+theme.sound_image = home .. "/.icons/sound-white.png"
+theme.tux_image = home .. "/.icons/tux.png"
 
 
 
