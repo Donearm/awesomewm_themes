@@ -13,8 +13,8 @@ theme.bg_urgent     = "#f6f6f6"
 theme.bg_minimize   = "#080708"
 
 theme.fg_normal     = "#f6f6f6"
-theme.fg_focus      = "#262729"
-theme.fg_urgent     = "#6b544c"
+theme.fg_focus      = "#6b544c"
+theme.fg_urgent     = "#bf7a7c"
 theme.fg_minimize   = "#f6f6f6"
 
 theme.border_width  = "0"
