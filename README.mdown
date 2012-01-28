@@ -1,7 +1,7 @@
 This is my collection of hand-made Awesome WM themes
 ----------------------------------------------------
 
-They are all themed after a wallpaper of a beautiful girl because who doesn't like beautiful girls? They shouldn't be nsfw because there is zero nudity and anyway if a wallpaper offends you or your boss you can of course change it.
+They are, mostly, themed after a wallpaper of a beautiful girl because who doesn't like beautiful girls? They shouldn't be nsfw because there is zero nudity and anyway if a wallpaper offends you or your boss you can of course change it.
 I have not modified many icons, nearly all are standard AwesomeWM installation so there was no need to upload them here again. The few that I've customized have been added in the respective theme directory. I've also added gtkrc and .Xdefaults files to match the theme and some other programs' config files that I used at the time of creation of the theme. I'm not a great colour matcher so edit what you want wherever you find it fit to.
 Also, the menu in rc.lua is up to you to make and to match it with the theme but that was a given (and very easy).
 
