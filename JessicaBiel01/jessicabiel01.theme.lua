@@ -105,11 +105,11 @@ theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
 
 -- Custom icons
 theme.awesomewm_image = home .. "/.icons/archlinux-wm-awesome.png"
-theme.terminal_image = home .. "/.icons/terminal_prompt.png"
+theme.terminal_image = home .. "/.icons/terminal-elegant.png"
 theme.firefox_image = "/usr/share/icons/hicolor/32x32/apps/firefox.png"
 theme.dwb_image = "/usr/share/pixmaps/dwb.png"
 theme.filemanager_image = home .. "/.icons/ranger-chuck.gif"
-theme.music_image = home .. "/.icons/music.jpg"
+theme.music_image = home .. "/.icons/music-elegant.png"
 theme.office_image = "/usr/share/icons/hicolor/32x32/apps/libreoffice-main.png"
 theme.skype_image = "/usr/share/pixmaps/skype.png"
 theme.vbox_image = "/usr/share/pixmaps/VBox.png"
@@ -124,8 +124,10 @@ theme.up_arrow_image = home .. "/.icons/up-white.png"
 theme.down_arrow_image = home .. "/.icons/down-white.png"
 theme.mail_image = home .. "/.icons/gmail-b&w.png"
 theme.taskwarrior_image = home .. "/.icons/taskwarrior.png"
-theme.sound_image = home .. "/.icons/sound-white.png"
+theme.sound_image = home .. "/.icons/listen.png"
 theme.tux_image = home .. "/.icons/tux.png"
+theme.windows_image = home .. "/.icons/windows.png"
+theme.ubuntu_image = home .. "/.icons/ubuntu.png"
 
 
 
