@@ -34,7 +34,7 @@ theme.titlebar_bg_normal = "#120d1b"
 --taglist_bg_focus = #ff0000
 
 -- Display the taglist squares
-theme.taglist_squares_sel = "/home/gianluca/.icons/squareg.png"
+theme.taglist_squares_sel = "/home/gianluca/.icons/squarefg.png"
 theme.taglist_squares_unsel = "/usr/share/awesome/themes/default/taglist/squarew.png"
 
 theme.tasklist_floating_icon = "/usr/share/awesome/themes/default/tasklist/floating.png"
