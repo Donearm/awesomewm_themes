@@ -7,7 +7,7 @@ googlereader-flag-star	"b"
 show-read-feeds	no
 auto-reload "yes"
 reload-time "60"
-browser "firefox %u"
+browser "feh_or_browser.lua %u"
 max-items "100"
 cleanup-on-quit "yes"
 confirm-exit "yes"
@@ -17,6 +17,9 @@ user-agent "Mozilla/5.0 (X11; Linux x86_64; rv:10.0.2) Gecko/20100101 Firefox/10
 
 bind-key "j" "down"
 bind-key "k" "up"
+bind-key "i" "open"
+
+define-filter "time-consuming feeds" "tags !# \"fashion\""
 
 color background	color63		default
 color listnormal	color69		default
