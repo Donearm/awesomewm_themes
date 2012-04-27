@@ -35,7 +35,7 @@ theme.titlebar_bg_normal = "#dedede"
 
 -- Display the taglist squares
 theme.taglist_squares_sel = "/home/gianluca/.icons/squarefg.png"
-theme.taglist_squares_unsel = "/usr/share/awesome/themes/default/taglist/square.png"
+theme.taglist_squares_unsel = "/usr/share/awesome/themes/default/taglist/squarew.png"
 
 theme.tasklist_floating_icon = "/usr/share/awesome/themes/default/tasklist/floatingw.png"
 
