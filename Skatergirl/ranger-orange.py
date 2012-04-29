@@ -65,14 +65,13 @@ class Scheme(Default):
                     fg = magenta
 
         elif context.in_titlebar:
-            attr |= bold
             if context.hostname:
                 fg = context.bad and 52 or 58
             elif context.directory:
                 fg = 52
             elif context.tab:
                 if context.good:
-                    bg = yellow
+                    attr |= bold
 
         elif context.in_statusbar:
             if context.permissions:
