@@ -26,7 +26,7 @@ hi ErrorMsg color: red; background: #000000; font-weight: bold;
 hi Indicator color: #6b544c; background: #000000;
 hi LineNr color: red; background: inherit !important;
 
-hi Hint color: #fefefe; background: #6b544c; font-family: Terminus; opacity: .9;
+hi Hint color: #fefefe; background: #6b544c; font-family: Terminus; opacity: .9; font-size: 120%;
 hi Hint::after content: attr(number);
 hi HintActive color: #70058b !important; background: inherit;
 hi HintElem color: #e30060;
