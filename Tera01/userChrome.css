@@ -1,0 +1,140 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Style the nav-bar when tabs are below it */
+#main-window[tabsontop=false] #nav-bar {
+    background-image: url("file:///usr/share/themes/Aldabra/gtk-2.0/assets/toolbar.png") !important;
+    min-height : 48px !important;
+    padding: 0 6px !important;
+    margin-top: 2px !important;
+}
+#main-window[tabsontop=false] #urlbar,
+#main-window[tabsontop=false] .searchbar-textbox {
+    -moz-appearance: none !important;
+    min-height: 29px !important;
+    margin-top: 0px !important;
+    border: 1px solid rgba(0,0,0,0.35) !important;
+    border-radius: 3px !important;
+    background: #FFFFFF !important;
+    padding: 1px !important;
+}
+
+/* Style the nav-bar when tabs are above it */
+#main-window[tabsontop=true] #nav-bar {
+    background-image: -moz-linear-gradient(top, #FFFFFF, #E2E2DF) !important;
+}
+
+/* Style the tab bar */
+#TabsToolbar {
+    height: 34px !important;
+    padding-top: 3px !important;
+    padding-left: 0 !important;
+    -moz-appearance: none !important;
+    background-image: none !important;
+}
+
+/* General settings for tabs */
+.tabbrowser-tab {
+    min-height: 29px !important;
+    margin-top: 0px !important;
+    margin-right: -7px !important;
+    padding: 0 2px 2px 3px !important;
+    background-image: none !important;
+    -moz-appearance: tab !important;
+    color: ButtonText !important;
+}
+.tabbrowser-tab .tab-icon-image {
+    margin-top: 3px !important;
+    margin-left: 5px !important;
+}
+.tabbrowser-tab .tab-text {
+    margin-top: 3px !important;
+    margin-left: 3px !important;
+    margin-right: 6px !important;
+}
+.tabbrowser-tab .tab-close-button {
+    margin-top: 3px !important;
+    margin-right: 10px !important;
+}
+.tabbrowser-tab .tab-throbber {
+    margin-top: 4px !important;
+    margin-left: 5px !important;
+    margin-right: 3px !important;
+}
+
+/* Pinned tabs */
+.tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]),
+.tabbrowser-tab:not([pinned]):first-child {
+    margin-left: 0 !important;
+}
+.tabbrowser-tab[pinned] {
+    padding: 0 1px !important;
+}
+.tabbrowser-tab[pinned] .tab-icon-image {
+    margin-top: 1px !important;
+    margin-left: 8px !important;
+    margin-right: -1px !important;
+}
+.tabbrowser-tabs[positionpinnedtabs="true"] .tabbrowser-tab[pinned] .tab-icon-image {
+    margin-top: 2px !important;
+}
+.tabbrowser-tabs[positionpinnedtabs="true"] .tabbrowser-tab[selected=true][pinned] .tab-icon-image {
+    margin-top: 4px !important;
+}
+
+/* Selected tabs */
+.tabbrowser-tab[selected=true] {
+    margin-top: -2px !important;
+    min-height: 28px !important;
+    padding: 0 3px 4px 5px !important;
+    z-index: 1 !important;
+    position: relative !important;
+}
+.tabbrowser-tab[selected=true][pinned] {
+    min-height: 22px !important;
+    padding-right: 3px !important;
+    padding-left: 3px !important;
+}
+.tabbrowser-tab[selected=true] .tab-icon-image {
+    margin-top: 6px !important;
+    margin-left: 3px !important;
+}
+.tabbrowser-tab[selected=true][pinned] .tab-icon-image {
+    margin-top: 5px !important;
+    margin-left: 6px !important;
+    margin-right: -3px !important;
+}
+.tabbrowser-tab[selected=true] .tab-text {
+    margin-top: 4px !important;
+    margin-left: 3px !important;
+}
+.tabbrowser-tab[selected=true] .tab-close-button {
+    margin-top: 4px !important;
+    margin-right: 10px !important;
+}
+.tabbrowser-tab[selected=true] .tab-throbber {
+    margin-right: 1px !important;
+}
+
+/* Unselected tabs */
+.tabbrowser-tab[selected=false] {
+    z-index: 0 !important;
+    position: relative !important;
+    margin-top: 0px !important;
+}
+.tabbrowser-tab[selected=false] .tab-text {
+    padding-right: 12px !important;
+}
+.tabbrowser-tab[selected=false] .tab-icon-image {
+    margin-top: 8px !important;
+    margin-left: 6px !important;
+}
+
+/* New tab button */
+.tabs-newtab-button {
+    height: 16px !important;
+    margin-top: 2px !important;
+    margin-left: 6px !important;    
+    padding-bottom: 3px !important;
+    background-image: none !important;
+    -moz-appearance: toolbarbutton !important;
+}
