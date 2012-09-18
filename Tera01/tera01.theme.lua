@@ -14,7 +14,7 @@ theme.bg_minimize   = "#a0949a"
 
 theme.fg_normal     = "#161d42"
 theme.fg_focus      = "#4e88b7"
-theme.fg_urgent     = "#ededed"
+theme.fg_urgent     = "#a0718a"
 theme.fg_minimize   = "#161d42"
 
 theme.border_width  = "0"
