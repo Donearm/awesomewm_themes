@@ -33,7 +33,7 @@ Urxvt.boldItalicFont:	xft:DejaVu Sans Mono:bold:italic:pixelsize=12
 !Urxvt.italicFont:		xft:Consolas:italic:pixelsize=14
 !Urxvt.boldItalicFont:	xft:Consolas:bold:italic:pixelsize=14
 !urxvt.background:		rgba:0000/0000/0000/cccc
-urxvt.background:		#ededed
+urxvt.background:		#386589
 urxvt.foreground:		#dedede
 URxvt.transparent:		true
 URxvt.shading:			10
