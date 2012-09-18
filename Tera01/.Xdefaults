@@ -71,7 +71,7 @@ URxvt.color14:  #2ca0a4
 URxvt.color7:   #dedede
 URxvt.color15:  #fdfdfd
 URxvt.colorBD:	#4e88b7
-URxvt.colorUL:	#963f14
+URxvt.colorUL:	#315772
 URxvt.colorIT:			white
 URxvt.scrollBar:		true
 URxvt.scrollColor:		#4e88b7
