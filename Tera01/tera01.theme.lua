@@ -1,5 +1,5 @@
 ---------------------------
--- Blueyes awesomewm theme by Donearm <forod.g@gmail.com>
+-- Tera01 awesomewm theme by Donearm <forod.g@gmail.com>
 ---------------------------
 
 theme = {}
