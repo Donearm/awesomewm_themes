@@ -130,6 +130,10 @@ theme.sound_image = home .. "/.icons/listen.png"
 theme.tux_image = home .. "/.icons/tux.png"
 theme.windows_image = home .. "/.icons/windows.png"
 theme.ubuntu_image = home .. "/.icons/ubuntu.png"
+theme.playing_image = home .. "/.icons/play-playing.png"
+theme.pause_playing_image = home .. "/.icons/pause-playing.png"
+theme.stop_playing_image = home .. "/.icons/stop-playing.png"
+theme.transparent_image = home .. "/.icons/transparent.png"
 
 
 
