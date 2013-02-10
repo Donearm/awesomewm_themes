@@ -7,6 +7,7 @@ hi StatusLineNormal color: #f00001; background: #fafbf6; font-size: 9pt;
 hi StatusLineBroken color: #a0a0a0; background: #8a110e; font-size: 9pt;
 hi StatusLineSecure color: #c70c0c; background: #8a110e; font-size: 9pt;
 hi StatusLineExtended color: #c70c0c; background: #8a110e; font-size: 9pt;
+hi StatusInfoMsg color: #fafbf6; background: #f00001; font-size: 9pt;
 
 hi Normal color: #f00001; background: #fafbf6; font-size: 9pt;
 hi CmdLine color: #f00001; background: #fafbf6; font-size: 9pt;
