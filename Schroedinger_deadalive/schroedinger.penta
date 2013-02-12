@@ -9,6 +9,7 @@ hi StatusLineNormal color: #fefefe; background: #111111; font-size: 9pt;
 hi StatusLineBroken color: #fefefe; background: #70058b; font-size: 9pt;
 hi StatusLineSecure color: #c70c54; background: #70058b; font-size: 9pt;
 hi StatusLineExtended color: #c70c54; background: #70058b; font-size: 9pt;
+hi StatusQuestion color: f2d6d6 !important; background: inherit !important;
 
 hi Normal color: #fefefe; background: #111111; font-size: 9pt;
 hi CmdLine color: #fefefe; background: #111111; font-size: 9pt;
@@ -24,7 +25,6 @@ hi CompResult color: #fefefe; font-weight: normal; width: 40%; overflow: hidden;
 hi CompDesc color: #fefefe; font-weight: normal; width: 60%;
 
 hi Bell border: 0 none; background: inherit;
-hi ErrorMsg color: red; background: #111111; font-weight: bold;
 hi Indicator color: #70058b; background: #111111;
 hi LineNr color: red; background: inherit !important;
 
@@ -39,6 +39,7 @@ hi Message white-space: normal; min-width: 100%; padding-left: 2em; text-indent:
 hi WarningMsg color: #ff0000; background: #111111;
 hi ModeMsg color: #fefefe; background: #111111;
 hi MoreMsg color: #fefefe; background: #111111;
+hi ErrorMsg color: red; background: #111111; font-weight: bold;
 
 hi NonText min-height: 16px; padding-left: 2px;
 hi Question color: #e5e5e5; background: #70058b; font-weight: bold;
@@ -48,4 +49,5 @@ hi URL color: #fefefe; text-decoration: none;
 hi URL:hover text-decoration: underline; cursor: pointer;
 hi Tag color: #f2d6d6; text-decoration: underline;
 
-" vim: set ft=vim tw=0:
+
+" vim: set ft=pentadactyl:tw=0:
