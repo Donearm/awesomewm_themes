@@ -1,1 +1,1 @@
-![](screenshot.png "Screenshot")
+![](es-screenshot.png "Screenshot")
