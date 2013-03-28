@@ -98,8 +98,6 @@ theme.layout_tiletop = "/usr/share/awesome/themes/default/layouts/tiletopw.png"
 theme.layout_spiral  = "/usr/share/awesome/themes/default/layouts/spiralw.png"
 theme.layout_dwindle = "/usr/share/awesome/themes/default/layouts/dwindlew.png"
 
-theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
-
 -- Define the icon theme for application icons. If not set then the icons 
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
 theme.awesomewm_image = home .. "/.icons/archlinux-wm-awesome.png"
@@ -133,6 +131,14 @@ theme.pause_playing_image = home .. "/.icons/pause-playing.png"
 theme.stop_playing_image = home .. "/.icons/stop-playing.png"
 theme.transparent_image = home .. "/.icons/transparent.png"
 
+-- Statusbars' custom icons
+theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
+theme.cpu_icon = home .. "/.icons/awesome-white/cpu.png"
+theme.ram_icon = home .. "/.icons/awesome-white/mem.png"
+theme.net_up_icon = home .. "/.icons/awesome-white/net_up_01.png"
+theme.net_down_icon = home .. "/.icons/awesome-white/net_down_01.png"
+theme.mail_icon = home .. "/.icons/awesome-white/mail.png"
+theme.speaker_icon = home .. "/.icons/awesome-white/spkr_01.png"
 
 
 return theme
