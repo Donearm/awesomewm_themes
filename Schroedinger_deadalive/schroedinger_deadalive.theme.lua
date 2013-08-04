@@ -22,6 +22,10 @@ theme.border_width  = "0"
 theme.border_normal = "#000000"
 theme.border_focus  = "#b3b3b3"
 theme.border_marked = "#70058b"
+
+-- the colour of parenthesis, brackets etc. in the statusbars
+theme.fg_divisions = "#70058b"
+
 -- There are another variables sets
 -- overriding the default one when
 -- defined, the sets are:
