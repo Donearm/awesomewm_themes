@@ -1,0 +1,127 @@
+! Font settings
+Xft*antialias:	    1
+Xft*hinting:		medium
+Xft.hintstyle:		hintlight
+Xft*.lcdfilter:		lcddefault
+
+! XTerm
+xterm*termname:	    xterm-color
+xterm*utf8:			1
+
+! Xclock
+xclock*hourColor:   blue
+xclock*minuteColor: blue
+xclock*secondColor: blue
+xclock*majorColor:  white
+xclock*minorColor:  blue
+xclock*buffer:	    true
+xclock*background:  black
+
+! Mouse Theme
+Xcursor*theme:			Obsidian
+URxvt.bitdepth:			32
+Urxvt.depth:			32
+URxvt.geometry:			80x24+0+0
+! Rxvt font options
+!rxvt*font:				*-iso10646-1
+!rxvt*font:				-*-freemono-medium-*-*-*-17-*-*-*-*-*-iso10646-*
+!URxvt.font:			-*-candara-*-*-*-*-*-*-*-*-*-*-iso10646-1
+!URxvt.font:			-*-dejavu sans mono-*-*-*-*-*-*-*-*-*-*-iso10646-1
+!URxvt.font:			xft:DejaVu Sans Mono:pixelsize=12
+!URxvt.boldFont:		xft:DejaVu Sans Mono:bold:pixelsize=12
+!Urxvt.italicFont:		xft:DejaVu Sans Mono:italic:pixelsize=12
+!Urxvt.boldItalicFont:	xft:DejaVu Sans Mono:bold:italic:pixelsize=12
+URxvt.font:				xft:Liberation Mono:pixelsize=12
+URxvt.boldFont:			xft:Liberation Mono:bold:pixelsize=12
+Urxvt.italicFont:		xft:Liberation Mono:italic:pixelsize=12
+Urxvt.boldItalicFont:	xft:Liberation Mono:bold:italic:pixelsize=12
+!urxvt.background:		rgba:0000/0000/0000/cccc
+urxvt.background:		#140701
+urxvt.foreground:		#f7f7f7
+URxvt.transparent:		true
+URxvt.shading:			10
+URxvt.fading:			30
+URxvt.fadeColor:		#bdbdbd
+!URxvt.tintColor:		#6c9eab
+!URxvt.cursorColor:		#e4a900
+URxvt.cursorColor:		#7a2613
+URxvt.cursorColor2:		#bdbdbd
+URxvt.pointerColor:		#ad8062
+URxvt.pointerColor2:	black
+URxvt.pointerBlank:		true
+!Black + DarkGrey
+URxvt.color0:   #140701
+URxvt.color8:   #484848
+!DarkRed + Red
+URxvt.color1:   #8a110e
+URxvt.color9:   #ed3838
+!DarkGreen + Green
+URxvt.color2:   #042c15
+URxvt.color10:  #064320
+!DarkYellow + Yellow
+URxvt.color3:   #b87d2e
+URxvt.color11:  #ebeb1b
+!DarkBlue + Blue
+URxvt.color4:   #002a4f
+URxvt.color12:  #004582
+!DarkMagenta + Magenta
+URxvt.color5:	#452c61
+URxvt.color13:  #5e3c84
+!DarkCyan + Cyan
+URxvt.color6:   #3168b5
+URxvt.color14:  #377ef2
+!LightGrey + White
+URxvt.color7:   #bdbdbd
+URxvt.color15:  #f7f7f7
+URxvt.colorBD:	#7a2613
+URxvt.colorUL:	#ad8062
+URxvt.colorIT:			#ba7653
+URxvt.scrollBar:		true
+URxvt.scrollColor:		#7a2613
+URxvt.scrollstyle:		plain
+URxvt.jumpScroll:		0
+URxvt.throughColor:		cyan
+URxvt.borderColor:		#f7f7f7
+URxvt.iconName:			urxvt
+URxvt.saveLines:		3000
+URxvt.internalBorder:	0
+URxvt.externalBorder:	0
+URxvt.termName:			rxvt-unicode-256color
+Urxvt.cutchars:			`"'&()*,;<=>?@[]{|}$`
+URxvt.hold:				true
+URxvt.loginShell:		true
+URxvt.perl-ext-common:	default,matcher,url-select
+URxvt.keysym.M-C-u:		perl:url-select:select_next
+URxvt.url-select.autocopy: true
+URxvt.url-select.button: 2
+URxvt.url-select.launcher: firefox
+URxvt.url-select.underline: true
+!URxvt.matcher.button:	1
+!URxvt.perl-ext:	    tabbed,matcher
+!configure here the look of the tab bar
+URxvt.tabbed.tabbar-fg:	7
+URxvt.tabbed.tabbar-bg:	0
+URxvt.tabbed.tab-fg:	6
+URxvt.tabbed.tab-bg:	0
+! select input method (may be different from locale)
+!URxvt.imlocale:		it_IT.UTF-8	
+
+! Stjerm
+stjerm.key:			F1
+stjerm.mod:			windows
+stjerm.font:		Consolas 11
+stjerm.background:	#0e1422
+stjerm.foreground:	#e6eef2
+stjerm.border:	    none
+stjerm.opacity:	    90
+stjerm.width:	    650
+stjerm.height:	    400
+stjerm.position:    right
+stjerm.scrollbar:   right
+stjerm.lines:	    10000
+stjerm.showtab:	    one
+stjerm.tabpos:	    top
+
+! Lalcal
+lalcal*format:	    %a %e %b %l.%M%P
+lalcal*width:	    140
