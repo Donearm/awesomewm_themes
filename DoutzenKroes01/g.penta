@@ -6,9 +6,9 @@ hi clear
 
 hi StatusLine color: #df253f; background: #ffffff; font-size: 9pt;
 hi StatusLineNormal color: #df253f; background: #ffffff; font-size: 9pt;
-hi StatusLineBroken color: #484848; background: #ced530; font-size: 9pt;
-hi StatusLineSecure color: #f0fe01; background: #ced530; font-size: 9pt;
-hi StatusLineExtended color: #f0fe01; background: #ced530; font-size: 9pt;
+hi StatusLineBroken color: #484848; background: #ffffff; font-size: 9pt;
+hi StatusLineSecure color: #cdcc3f; background: #ffffff; font-size: 9pt;
+hi StatusLineExtended color: #fffc5d; background: #ffffff; font-size: 9pt;
 
 hi Normal color: #df253f; background: #ffffff; font-size: 9pt;
 hi CmdLine color: #df253f; background: #ffffff; font-size: 9pt;
