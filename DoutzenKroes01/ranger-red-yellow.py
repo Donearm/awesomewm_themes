@@ -15,13 +15,18 @@ class Scheme(Default):
             else:
                 attr = normal
             if context.empty or context.error:
-                bg = red
-            if context.border:
-                fg = default
-            if context.media:
+                attr = bold
+                fg = red
+            if context.image:
                 fg = yellow
-            if context.container:
+            if context.video:
+                fg = magenta
+            if context.audio:
                 fg = green
+            if context.document:
+                fg = white
+            if context.container:
+                fg = cyan
             if context.directory:
                 attr |= bold
                 fg = 52
@@ -30,10 +35,8 @@ class Scheme(Default):
                         context.fifo, context.socket)):
                 attr |= bold
                 fg = 27
-
             if context.link and not context.directory:
                 fg = linkcolor[context.good]
-
             if context.socket:
                 fg = 21
                 attr |= bold
@@ -42,20 +45,19 @@ class Scheme(Default):
                 if context.device:
                     attr |= bold
             if context.link:
+                attr |= bold
                 fg = context.good and cyan or 71
             if context.tag_marker and not context.selected:
                 attr |= bold
-                if fg in (34, 22):
-                    fg = 253
-                else:
-                    fg = 34
+                fg = 34
             if not context.selected and (context.cut or context.copied):
                 fg = black
-                attr |= bold
             if context.main_column:
                 if context.selected:
-                    attr |= bold
-                if context.marked:
+                    if context.marked:
+                        attr = normal | reverse
+                        fg = yellow
+                elif context.marked:
                     attr |= bold
                     fg = 71
             if context.badinfo:
@@ -63,6 +65,8 @@ class Scheme(Default):
                     bg = green
                 else:
                     fg = yellow
+            if context.border:
+                fg = default
 
         elif context.in_titlebar:
             if context.hostname:
@@ -72,6 +76,8 @@ class Scheme(Default):
             elif context.tab:
                 if context.good:
                     attr |= bold
+            elif context.link:
+                fg = cyan
 
         elif context.in_statusbar:
             if context.permissions:
@@ -86,6 +92,8 @@ class Scheme(Default):
                 if context.bad:
                     attr |= bold
                     fg = red
+            if context.loaded:
+                bg = 238
 
         if context.text:
             if context.highlight:
@@ -93,5 +101,21 @@ class Scheme(Default):
 
             if context.selected:
                 attr |= reverse
+
+        if context.in_taskview:
+            if context.title:
+                fg = default
+                attr |= bold
+
+            if context.selected:
+                attr |= reverse
+
+            if context.loaded:
+                if context.selected:
+                    fg = 29
+                    bg = white
+                else:
+                    bg = 29
+                    fg = white
 
         return fg, bg, attr
