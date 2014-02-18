@@ -2,7 +2,7 @@
 # (default=transparent)
 
 color normal     default		default		# normal text
-color indicator  black			red			# indicator of selected message/mailbox in index
+color indicator  default		red			# indicator of selected message/mailbox in index
 color tree       red			default		# tree arrows
 color status	 yellow			default		# statusline
 color error      red			default		# errors
