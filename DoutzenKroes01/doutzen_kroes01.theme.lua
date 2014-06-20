@@ -81,8 +81,8 @@ theme.titlebar_maximized_button_focus_inactive  = "/usr/share/awesome/themes/def
 theme.titlebar_maximized_button_normal_active = "/usr/share/awesome/themes/default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active  = "/usr/share/awesome/themes/default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = "/mnt/d/Maidens/img/Wallpapers/DoutzenKroes-wallpaper01.jpg"
-theme.wallpaper_cmd = { "feh --bg-scale /mnt/d/Maidens/img/Wallpapers/DoutzenKroes-wallpaper01.jpg"}
+theme.wallpaper = "/mnt/d/Images/DoutzenKroes-wallpaper03.jpg"
+theme.wallpaper_cmd = { "feh --bg-scale /mnt/d/Images/DoutzenKroes-wallpaper03.jpg"}
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = "/usr/share/awesome/themes/default/layouts/fairh.png"
@@ -105,6 +105,7 @@ theme.terminal_image = home .. "/.icons/terminal-elegant.png"
 theme.firefox_image = "/usr/share/icons/hicolor/32x32/apps/firefox.png"
 theme.dwb_image = "/usr/share/pixmaps/dwb.png"
 theme.chromium_image = "/usr/share/icons/hicolor/32x32/apps/chromium.png"
+theme.chrome_image = "/usr/share/icons/hicolor/32x32/apps/google-chrome.png"
 theme.filemanager_image = home .. "/.icons/ranger-chuck.gif"
 theme.music_image = home .. "/.icons/music-elegant.png"
 theme.office_image = "/usr/share/icons/hicolor/32x32/apps/libreoffice-main.png"
