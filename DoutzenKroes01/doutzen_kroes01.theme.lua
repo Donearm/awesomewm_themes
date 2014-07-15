@@ -52,11 +52,6 @@ theme.menu_width  = 100
 --theme.menu_fg_focus = "#a0949a"
 --theme.menu_border_color = "#ededed"
 
--- You can add as many variables as
--- you wish and access them by using
--- beautiful.variable in your rc.lua
---theme.bg_widget = "#cc0000"
-
 -- Define the image to load
 theme.titlebar_close_button_normal = "/usr/share/awesome/themes/default/titlebar/close_normal.png"
 theme.titlebar_close_button_focus  = "/usr/share/awesome/themes/default/titlebar/close_focus.png"
@@ -82,7 +77,7 @@ theme.titlebar_maximized_button_normal_active = "/usr/share/awesome/themes/defau
 theme.titlebar_maximized_button_focus_active  = "/usr/share/awesome/themes/default/titlebar/maximized_focus_active.png"
 
 theme.wallpaper = "/mnt/d/Images/DoutzenKroes-wallpaper03.jpg"
-theme.wallpaper_cmd = { "feh --bg-scale /mnt/d/Images/DoutzenKroes-wallpaper03.jpg"}
+theme.wallpaper_cmd = { "sxiv /mnt/d/Images/DoutzenKroes-wallpaper03.jpg"}
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = "/usr/share/awesome/themes/default/layouts/fairh.png"
