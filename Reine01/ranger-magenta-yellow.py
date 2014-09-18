@@ -20,36 +20,36 @@ class Scheme(Default):
             if context.image:
                 fg = yellow
             if context.video:
-                fg = magenta
+                fg = blue
             if context.audio:
                 fg = green
             if context.document:
-                fg = white
+                fg = 223
             if context.container:
                 fg = cyan
             if context.directory:
                 attr |= bold
-                fg = 52
+                fg = 54
             elif context.executable and not \
                     any((context.media, context.container,
                         context.fifo, context.socket)):
                 attr |= bold
-                fg = 27
+                fg = 26
             if context.link and not context.directory:
                 fg = linkcolor[context.good]
             if context.socket:
-                fg = 21
+                fg = 19
                 attr |= bold
             if context.fifo or context.device:
-                fg = 33
+                fg = 32
                 if context.device:
                     attr |= bold
             if context.link:
                 attr |= bold
-                fg = context.good and cyan or 71
+                fg = context.good and cyan or 74
             if context.tag_marker and not context.selected:
                 attr |= bold
-                fg = 34
+                fg = 228
             if not context.selected and (context.cut or context.copied):
                 fg = black
             if context.main_column:
@@ -59,7 +59,7 @@ class Scheme(Default):
                         fg = yellow
                 elif context.marked:
                     attr |= bold
-                    fg = 71
+                    fg = 230
             if context.badinfo:
                 if attr & reverse:
                     bg = green
@@ -70,9 +70,9 @@ class Scheme(Default):
 
         elif context.in_titlebar:
             if context.hostname:
-                fg = context.bad and yellow or 196
+                fg = context.bad and yellow or 229
             elif context.directory:
-                fg = 88
+                fg = 54
             elif context.tab:
                 if context.good:
                     attr |= bold
@@ -87,7 +87,7 @@ class Scheme(Default):
                     fg = red
             if context.marked:
                 attr |= bold | reverse
-                fg = 58
+                fg = 230
             if context.message:
                 if context.bad:
                     attr |= bold
@@ -112,10 +112,10 @@ class Scheme(Default):
 
             if context.loaded:
                 if context.selected:
-                    fg = 29
+                    fg = 54
                     bg = white
                 else:
-                    bg = 29
+                    bg = 54
                     fg = white
 
         return fg, bg, attr
