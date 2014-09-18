@@ -45,7 +45,7 @@ URxvt.fadeColor:		#3d3230
 !URxvt.tintColor:		#6c9eab
 !URxvt.cursorColor:		#e4a900
 URxvt.cursorColor:		#34243e
-URxvt.cursorColor2:		#ced530
+URxvt.cursorColor2:		#dedad0
 URxvt.pointerColor:		#34243e
 URxvt.pointerColor2:	black
 URxvt.pointerBlank:		true
