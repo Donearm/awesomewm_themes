@@ -2,7 +2,7 @@
 # (default=transparent)
 
 color normal     default		default		# normal text
-color indicator  default		magenta		# indicator of selected message/mailbox in index
+color indicator  black			yellow		# indicator of selected message/mailbox in index
 color tree       magenta		default		# tree arrows
 color status	 yellow			default		# statusline
 color error      red			default		# errors
@@ -20,7 +20,7 @@ color underline  black          default		# underlined text in body
 color hdrdefault magenta		default		# default headers
 color header     yellow			default  "^(from|subject):"  # from and subject headers
 
-color body       brightgreen    default  "((ftp|http|https)://|(file|mailto|news):|www\\.)[-a-z0-9_.:]*[a-z0-9](/[^][{} \t\n\r\"<>()]*[^][{} \t\n\r\"<>().,:!])?/?" 
+color body       brightmagenta    default  "((ftp|http|https)://|(file|mailto|news):|www\\.)[-a-z0-9_.:]*[a-z0-9](/[^][{} \t\n\r\"<>()]*[^][{} \t\n\r\"<>().,:!])?/?" 
 color body       brightred      default  "[-a-z_0-9.+]+@[-a-z_0-9.]+" 
 color body       red            default  "(^| )\\*[-a-z0-9*]+\\*[,.?]?[ \n]" 
 color body       yellow			default  "(^| )_[-a-z0-9_]+_[,.?]?[ \n]" 
@@ -56,8 +56,8 @@ color quoted9    red            default
 
 color index      brightred		default "~F"			# flagged messages
 color index		 brightred		default	"~N~F"			# new flagged messages
-color index      red			default "~N"			# new messages
-color index      magenta		default "~T"			# tagged messages
+color index      magenta		default "~N"			# new messages
+color index      brightyellow	default "~T"			# tagged messages
 color index      black			red		"~D"			# deleted messages
 color index		 brightred		default	"~E"			# expired messages
 color index		 blue			default	"~O"			# old messages
