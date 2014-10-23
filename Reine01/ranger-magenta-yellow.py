@@ -1,14 +1,15 @@
+from ranger.gui.colorscheme import ColorScheme
 from ranger.gui.color import *
-from ranger.colorschemes.default import Default
 
-class Scheme(Default):
+class Default(ColorScheme):
+    progress_bar_color = magenta
+
     def use(self, context):
         fg, bg, attr = default_colors
 
-        linkcolor = { True: cyan, False: blue }
-
         if context.reset:
             return default_colors
+
         elif context.in_browser:
             if context.selected:
                 attr = reverse
@@ -16,13 +17,19 @@ class Scheme(Default):
                 attr = normal
             if context.empty or context.error:
                 attr = bold
+            if context.border:
+                fg = default
+            if context.media:
+                if context.image:
+                    fg = yellow
+                elif context.video:
+                    fg = blue
+                elif context.audio:
+                    fg = green
+                else:
+                    fg = magenta
+            if context.container:
                 fg = red
-            if context.image:
-                fg = yellow
-            if context.video:
-                fg = blue
-            if context.audio:
-                fg = green
             if context.document:
                 fg = 223
             if context.container:
@@ -35,8 +42,6 @@ class Scheme(Default):
                         context.fifo, context.socket)):
                 attr |= bold
                 fg = 26
-            if context.link and not context.directory:
-                fg = linkcolor[context.good]
             if context.socket:
                 fg = 19
                 attr |= bold
@@ -94,12 +99,16 @@ class Scheme(Default):
                     fg = red
             if context.loaded:
                 bg = 238
+            if context.vcsinfo:
+                fg = blue
+                attr &= ~bold
+            if context.vcscommit:
+                fg = yellow
+                attr &= ~bold
+
 
         if context.text:
             if context.highlight:
-                attr |= reverse
-
-            if context.selected:
                 attr |= reverse
 
         if context.in_taskview:
@@ -117,5 +126,33 @@ class Scheme(Default):
                 else:
                     bg = 54
                     fg = white
+
+        if context.vcsfile and not context.selected:
+            attr &= ~bold
+            if context.vcsconflict:
+                fg = magenta
+            elif context.vcschanged:
+                fg = red
+            elif context.vcsunknown:
+                fg = red
+            elif context.vcsstaged:
+                fg = green
+            elif context.vcssync:
+                fg = green
+            elif context.vcsignored:
+                fg = default
+
+        elif context.vcsremote and not context.selected:
+            attr &= ~bold
+            if context.vcssync:
+                fg = green
+            elif context.vcsbehind:
+                fg = red
+            elif context.vcsahead:
+                fg = blue
+            elif context.vcsdiverged:
+                fg = magenta
+            elif context.vcsunknown:
+                fg = red
 
         return fg, bg, attr
