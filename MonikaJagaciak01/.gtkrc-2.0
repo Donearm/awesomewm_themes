@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/gianluca/.gtkrc-2.0.mine"
-gtk-theme-name="Elegant_Brit"
+gtk-theme-name="Ferret"
 gtk-icon-theme-name="clarity-icon-theme_0.4.0"
 gtk-font-name="Sans 9"
 gtk-cursor-theme-name="Obsidian"
